@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev:api": "cd packages/todo-api && npm run start:dev",
+    "dev:web": "cd packages/todo-web && npm run serve"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
