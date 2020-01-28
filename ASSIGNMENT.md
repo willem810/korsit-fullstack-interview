@@ -6,7 +6,7 @@ As explained in README.md, your assignment will be to create a CRUD API and a fr
 
 ### Must-have
 
-* **[**API]** All necessary CRUD routes for Todo items
+* **[API]** All necessary CRUD routes for Todo items
     * index
     * get
     * create
