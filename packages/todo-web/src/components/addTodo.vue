@@ -25,6 +25,7 @@ export default {
         isDone: false
       };
       this.$emit("add-todo", todo);
+      this.$refs.title.value = "";
     }
   }
 };
