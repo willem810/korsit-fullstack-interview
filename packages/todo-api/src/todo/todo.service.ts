@@ -23,19 +23,20 @@ export class TodoService {
     }
 
     async create(todo: Todo): Promise<Todo> {
-        console.log("Creating new todo: " + todo);
+        console.log("Creating todo with id: " + todo.id);
         return this.todoRepo.save(todo);
     }
 
     async update(todo: Todo): Promise<Todo> {
-        console.log("Updating todo: " + todo);
+        console.log("Updating todo with id: " + todo.id);
         return this.todoRepo.save(todo);
     }
 
     async delete(id: number) {
+        // The remove function of the Repository requires an object instead of an ID
+        // Therefor we first need to find this object
         var todo = await this.find(id);
-        console.log("Deleting todo: ");
-        console.log(todo);
+        console.log("Deleting todo with id: " + id);
         this.todoRepo.remove(todo);
     }
 }
